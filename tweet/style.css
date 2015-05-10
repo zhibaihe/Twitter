@@ -1,0 +1,75 @@
+/*
+ * 仿 Twitter App 示例代码
+ */
+
+body{
+    background: #f7f7f7;
+    font-family: "Helvatica Neue", Helvatica, Arial, sans-serif;
+    color: #595959;
+}
+
+.wrapper{
+    max-width:800px;
+    margin:50px auto;
+}
+
+/*
+ * Tweet styles
+ */
+.tweet{
+    background: #fff;
+    padding:25px;
+    border:1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.tweet::after{
+    display:table;
+    content:'';
+    clear:both;
+}
+
+.tweet > .avatar{
+    float: left;
+    width:75px;
+}
+.tweet > .avatar > img{
+    max-width:100%;
+    border-radius: 75px;
+}
+
+.tweet > .entry{
+    margin-left: 100px;
+}
+.tweet > .entry > .meta{
+    margin-bottom:15px;
+}
+.tweet > .entry > .meta > p{
+    margin:0;
+}
+.tweet > .entry > .meta > p > .nicename{
+    color: #343434;
+    font-weight: bold;
+}
+.tweet > .entry > .meta > p > .username,
+.tweet > .entry > .meta > p > .date{
+    color: #808080;
+}
+.tweet > .entry > .content > p{
+    margin:0;
+    line-height: 1.5;
+}
+.tweet > .entry > .actions{
+    margin:15px 0 0; padding:0;
+}
+.tweet > .entry > .actions > li{
+    list-style:none;
+    float:left;
+    padding-right:25px;
+}
+.tweet > .entry > .actions > li > a{
+    color: #808080;
+    text-decoration: none;
+}
+.tweet > .entry > .actions > li > a:hover{
+    color: #505050;
+}
